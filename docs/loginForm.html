@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="css/mobile.css"/>
+    <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width : 800px)" />
+    <link rel="icon" type="image/x-icon" href="images/logoCOMP.png" alt="" />
+
+</head>
+<body onresize="resizeFunction()">
+    <div class="container">
+        <header>
+            <div class="logo">
+                <!--image logo will go here-->
+                <img src="images/logoCOMP.png" alt="Dronfield Swimming Club Logo" />
+            </div>
+            <!--login-->
+            <div class="loginLink">
+                <ul>
+                    <li>
+                        <a href="loginForm.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!--burger menu-->
+            <div class="burgerMenu">
+                <div class="bars">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </header>
+        <!--navigation header at top of page-->
+        <nav class="mainNav">
+            <div class="row">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <!-- <li><a href="../html/classes.html">Classes</a></li>
+                    <li><a href="../html/testing.html">Conduct a Test</a></li> -->
+                </ul>
+            </div>
+        </nav>
+        <!--the main content for the site-->
+        <main>
+            <div class="mainContent">
+                <!--content goes here-->
+                <h1 class="siteTitle">Dronfield Swimming Club | Login </h1>
+                <!--Here is the login form which will execute the php script-->
+                <div class="form">
+                    <form action="php/login.php" method="post" enctype="multipart/form-data">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                        <br><br>
+                        <input type="submit" name="submit">
+                        <br><br>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="row">
+            <address>
+                Dronfield Sports Centre<br /> Dronfield<br /> Derbyshire<br /> S42 6NG
+            </address>
+        </div>
+    </footer>
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

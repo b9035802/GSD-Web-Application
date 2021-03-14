@@ -1,0 +1,164 @@
+@media screen and (min-width:800px) {
+    .mainNav 
+    { 
+        display:block !important; 
+    }
+}
+
+header
+{
+    background-color: white;
+    width:100%
+}
+header, .mainContent, .row 
+{
+    
+    padding: 0 5px;
+    margin: auto;
+}
+
+.loginLink > ul 
+{
+    list-style: none;
+    padding-left:  0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.loginLink > ul > li 
+{
+    border: 1px solid #000;
+}
+
+.loginLink > ul > li:first-child
+{
+    margin-right: 4px;
+}
+
+.loginLink > ul > li > a
+{
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+
+.burgerMenu 
+{
+    display: none;
+}
+
+.container
+{
+    max-width: 1920px;
+    margin:auto;
+    min-height: 100%;
+    overflow: auto;
+}
+
+
+.logo img 
+{
+    max-width: 50px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.darkMode /* PLACEHOLDER SEE ISSUE #3*/ 
+{
+    background-color: black;
+    color: white;
+}
+
+header nav ul li h1 {
+    display: flex;
+    padding: 0;
+    margin: 5px;
+    font-size: 1.2rem;
+    color: #476082;
+}
+
+header, .mainContent, .row 
+{
+    max-width: 1200px;
+    padding: 0 5px ;
+    margin: auto ;
+}
+
+.mainContent
+{
+    height: 100%;
+}
+
+.mainNav 
+{
+    padding: 8px 0 ;
+    height: auto ;
+    display: block ;
+    background-color: #2e3e74;
+}
+
+.mainNav, .row ul 
+{
+    display: flex ;
+    flex-direction: row ;
+    justify-content: space-evenly ;
+}
+.mainNav ul li a {
+    font-size:14pt ;
+}
+
+.mainNav > div > ul > li 
+{
+    border: none ;
+    padding: 10px ;
+}
+
+.card
+{
+    flex-basis: 30%;
+    padding: 5px;
+}
+
+.form 
+{
+    display: inline-block;
+    width: 100%;
+    /*flex-basis: 100%;*/
+}
+
+input.updateClassButton
+{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 15%;
+    cursor: pointer;
+}
+
+.newMemberbutton
+{
+    justify-content: center;
+    width: 200px;
+    height: 50px
+}
+
+.main{
+    min-height: 100%;
+    overflow: auto;
+}
+
+footer {
+    margin-top: 12%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2e3e74;
+    color: white;
+}
+

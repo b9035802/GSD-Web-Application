@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap');
+ *{
+    box-sizing: border-box;
+}
+
+body 
+{
+    height: 100%;
+    width: 100%;
+    font-family: Lato, Montserrat, sans-serif;
+    margin: 0;
+    padding: 0; 
+    background-color: #fefefe;
+}
+
+.container
+{
+    width: 100%;
+    min-width: 320px;
+}
+
+.darkMode /* SEE ISSUE #3 */
+{
+    background-color: black;
+    color: white;
+}/* TODO: Set a cookie to make dark theme persist between pages, fix login button font and border */
+
+
+.mainNav
+{
+    background-color: #476082;
+    display: none;
+}
+
+.mainNav ul 
+{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.mainNav ul li 
+{
+    border-top: 0.5px solid #ccc;
+    border-bottom: 0.5px solid #ccc;
+    padding: 5px;
+}
+
+.mainNav ul li a 
+{
+    margin: auto;
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 252, 251);
+    padding: 8px 0;
+}
+
+.link:active{
+    color: lightslategray !important;
+}
+
+.link:hover{
+    color: lightslategray !important;
+    
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #2e3e74; /* Was #2e3e74, change to something lighter ,, background-color: #476082;*/
+}
+
+h2 
+{
+    float: left;
+}
+
+.logo
+{
+    flex: 1;
+}
+
+.logo img 
+{
+    max-width: 50px;
+    padding: 5px;
+    margin-top: 2px;
+}
+
+img 
+{
+    width: 100%;
+}
+/*style login button*/
+.loginLink 
+{
+    justify-content: right;
+    padding: 0px 0px 0px 15px;
+    flex: 0;
+    font-size: 14px;
+}
+
+.loginLink > ul 
+{
+    list-style: none;
+    padding-left:  0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.loginLink > ul > li 
+{
+    border: 1px solid #000;
+    box-shadow: #476082;
+    background-color: whitesmoke;
+}
+
+.loginLink > ul > li >a:hover
+{
+    border: 1px solid #2e3e74;
+    font-weight: bold;
+}
+
+.loginLink > ul > li:first-child
+{
+    margin-right: 4px;
+}
+
+.loginLink > ul > li > a
+{
+    border: 1px solid lightblue;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+#signUpLink > a
+{
+    font-size: 16px;
+    color: gray;
+}
+
+.burgerMenu
+{
+    margin-top: 11px;
+    flex: 0;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+.bars
+{
+    float: right;
+    cursor: pointer;
+}
+
+.bar1,.bar2,.bar3 
+{
+    width: 30px;
+    height: 5px;
+    margin: 5px 0;
+    background-color: white;
+}
+
+.mainContent 
+{
+    height: 100%;
+    margin: 0 10px;
+    text-align: center;
+    margin-bottom:100px;
+    
+}
+
+
+/* Main Content */
+
+.siteTitle{
+    display: flex;
+    justify-content: center;
+    font-size: min(10vw, 50px);
+}
+
+.siteDesc{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.siteContent img{
+    background-image: src='https://cdn.discordapp.com/attachments/788419191870324769/798172367808888832/img-d59a1e029c9958cf333e15513f30d61d.png' alt='';
+    display: flex;
+    justify-content: center;
+}
+
+.sectionBreak {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #2e3e74;
+}
+
+.sectionTitle{
+    color: white;
+}
+
+.sectionDesc{
+    font-size: 18px;
+    color: white;
+}
+
+/* Section 1 */
+
+.section1Title{
+    margin-top: 3%;
+    font-size: 39px;
+}
+
+.section1Desc{
+    font-size: 25px;
+}
+
+.card-info-top{
+    height: auto;
+    transition: 0.3s;
+}
+
+.cards 
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px 16px;
+    justify-content: space-between;
+}
+
+.card
+{
+    flex-basis: 100%;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 50px;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+
+.card img{
+    /*border-radius: 25px;*/
+    border-radius: 5px 5px 0 0;
+}
+
+/*form stying*/
+
+label 
+{
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#classDay 
+{
+    width: 100%;
+    padding: 15px 10px;
+}
+
+#classDa
+{
+    width: 100%;
+    padding: 15px 10px;
+}
+
+
+input[type ='text'],[type ='tel'], input[type="email"], input[type="time"], textarea
+{
+    width: 100%;
+    padding: 15px 10px;
+}
+input[type ='date']
+{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 1rem;
+}
+
+input[type ='text'], input[type="password"], textarea
+{
+    width: 100%;
+    padding: 15px 10px;
+
+}
+/*button styling*/
+input[type="submit"] 
+{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.newMemberbutton
+{
+    width: 100%;
+    height: 50px
+}
+
+.updateButton{
+    font-size: 17px;
+}
+
+.deleteButton{
+    font-size: 17px;
+}
+
+.form 
+{
+    text-align: left;
+    padding-top: 5%;
+    width: 100%;
+    flex-basis: 100%;
+}
+.hidden{
+    display:none !important;
+}
+
+.topRow
+{
+    background-color: rgb(220, 245, 255);
+}
+
+input.updateClassButton
+{
+    width:100%;
+}
+
+input.updateClassButton
+{
+    width:100%;
+}
+
+input.updateClassButton
+{
+    width:100%;
+}
+
+.table 
+{
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x:auto;
+}
+
+.table, td, th
+{
+    border: 1px solid  cadetblue;
+}
+
+th 
+{
+    height: 70px;
+}
+
+th, td 
+{
+    padding: 10px;
+    text-align: left;
+}
+
+tr 
+{
+    vertical-align: center;
+}
+td 
+{
+    vertical-align: center;
+    border: none;
+    border-top: 1px solid  cadetblue;
+    border-bottom: 1px solid  cadetblue;
+}
+
+.topRow 
+{
+    cursor: pointer;
+    vertical-align: top;
+    text-align: left;
+}
+
+
+tr:hover 
+{
+    background-color: #e6f9ff;
+}
+
+form > div 
+{
+    margin: 50px;
+}
+
+/*footer styling*/
+
+
+.form 
+{
+    text-align: left;
+    padding-top: 5%;
+    width: 100%;
+    flex-basis: 100%;
+}
+
+.desktopTable
+{
+    display:none;
+}
+
+/*footer styling*/
+footer {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #2e3e74;
+    color: white;
+}
+
+footer .row 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .row address 
+{
+    padding: 15px 0 5px 5px;
+}
